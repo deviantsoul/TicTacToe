@@ -38,7 +38,7 @@ canvas  {
 h1  {
     line-height: 50px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 60px;
     text-transform: uppercase;
     text-align: center;
     color: rgba(255, 0, 0, 0.562);
@@ -49,9 +49,22 @@ h1::after   {   /* This is the underline */
     display: block;
     content: "";
     height: 2px;
-    width: 150px;
+    width: 600px;
     background: rgba(255, 14, 14, 0.603);
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.507);
 }
 
+body::after {
+    content: "";
+    background: url(https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;   
+  }
